@@ -1,0 +1,61 @@
+<html>
+
+<head>
+    <style>
+        html{
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -webkit-tap-highlight-color: rgba(0,0,0,0);
+        }
+        
+        body {
+            margin: 0px;
+            padding: 0px;
+            position: relative;
+            background-color: #120807;
+        }
+
+        img {
+            width: 100%;
+            vertical-align: top;
+        }
+
+        .main {
+            width: 100%
+        }
+
+        @media all and (min-width: 1000px) {
+            .main {
+                width: 50%;
+                margin: auto;
+            }
+        }
+    </style>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/jquery.rwdImageMaps.min.js"></script>
+    <script src="./js/ios-orientationchange-fix.min.js"></script>
+
+</head>
+
+<body>
+    <div class="main">
+        <img class="pc-image" src="./img/RABBIT.png" usemap="#image-map">
+
+        <map name="image-map">
+            <area target="" alt="1" title="1" href="http://rb-vvv.com" target="blank" coords="245,2805,1672,3028" shape="rect">
+            <area target="" alt="2" title="2" href="http://rb-sss.com" target="blank" coords="242,3083,1675,3305" shape="rect">
+            <area target="" alt="3" title="3" href="http://래빗바로가기.com" target="blank" coords="157,3564,1766,3829" shape="rect">
+          
+    </div>
+
+    <script src="chrome-extension://hhojmcideegachlhfgfdhailpfhgknjm/web_accessible_resources/index.js"></script>
+    <script>
+        (function ($) {
+            $(document).ready(function (e) {
+                $('.pc-image').rwdImageMaps();
+            });
+        })(jQuery);
+    </script>
+</body>
+
+</html>
